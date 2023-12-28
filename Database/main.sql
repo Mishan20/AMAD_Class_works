@@ -12,6 +12,7 @@ create table medicine(
     qty int,
     price decimal(10,2),
     sid varchar(20),
+    image_name varchar(500),
     primary key(mid),
     foreign key(sid) references supplier(sid)
 
@@ -21,13 +22,13 @@ desc medicine;
 
 select * from medicine;
 
-insert into medicine values('M001', 'Amoxalin', 300, 15.00 ,'S001');
+insert into medicine values('M001', 'Amoxalin', 300, 15.00 ,'S001' ,'image_178584.jpg');
 
-insert into medicine values('M002', 'Panadol', 200, 15.00 ,'S001');
+insert into medicine values('M002', 'Panadol', 200, 15.00 ,'S001' ,'NULL');
 
-insert into medicine values('M003', 'Amoxalin', 300, 15.00, 'S002');
+insert into medicine values('M003', 'Amoxalin', 300, 15.00, 'S002' ,'NULL');
 
-insert into medicine values('M004', 'Amoxalin', 300, 15.00, 'S002');
+insert into medicine values('M004', 'Amoxalin', 300, 15.00, 'S002' ,'NULL');
 
 insert into medicine values('M001', 'Amoxalin', 300, 15.00);
 
